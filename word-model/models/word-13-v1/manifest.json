@@ -1,0 +1,33 @@
+{
+  "modelVersion": "word-13-v1",
+  "checkpointFile": "best_model.pt",
+  "checkpointSha256": "8ea4b248bdd270d21ff90e83be4ce7cd21a1916635357e7a75dcd0098a292a9f",
+  "checkpointEpoch": 14,
+  "classes": [
+    "airplane",
+    "bicycle",
+    "moon",
+    "motorcycle",
+    "rain",
+    "run",
+    "ship",
+    "star",
+    "subway",
+    "swim",
+    "train",
+    "walk",
+    "wind"
+  ],
+  "input": {
+    "minimumFrames": 20,
+    "windowFrames": 60,
+    "shape": ["T", 42, 6],
+    "features": ["x", "y", "vx", "vy", "ax", "ay"]
+  },
+  "trainingSource": {
+    "branch": "feature/AI-words-JSW",
+    "commit": "20f6b04",
+    "modelPySha256": "b6d1a025e88608d59b8696ecd93c006c6daff3a78fce7b6ed0474cf3d172c9b4",
+    "preprocessKeypointsPySha256": "0e475ea69fd56fba4ff09d37d876a19c3dc5718c33b8c848b5df3d60cd2baddf"
+  }
+}

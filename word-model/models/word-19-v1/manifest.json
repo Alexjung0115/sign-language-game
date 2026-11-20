@@ -1,0 +1,21 @@
+{
+  "modelVersion": "word-19-v1",
+  "checkpointFile": "best_model.pt",
+  "checkpointSha256": "898169cf56bfbe39a3ce3b13165a8d6a53c5b873033b278ad0ab1ca7f17a72f4",
+  "checkpointEpoch": 4,
+  "classes": [
+    "airplane", "bicycle", "moon", "motorcycle", "rain", "run", "ship",
+    "star", "subway", "swim", "train", "walk", "wind", "bad", "bus",
+    "car", "good", "helicopter", "sun"
+  ],
+  "input": {
+    "minimumFrames": 20,
+    "windowFrames": 60,
+    "shape": ["T", 42, 6],
+    "features": ["x", "y", "vx", "vy", "ax", "ay"]
+  },
+  "trainingSource": {
+    "branch": "feature/AI-words-19-live-JSW",
+    "run": "word19_v1_aug6x_no_taxi"
+  }
+}

@@ -1,0 +1,62 @@
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Logs ###
+*.log
+logs/
+
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Java ###
+*.class
+**/bin/
+HELP.md
+
+### Env ###
+.env
+*.env.local
+
+### Claude Code / Spec Kit (로컬 전용) ###
+.claude/
+.specify/
+### Codex local ###
+/.agents/
+### Python / AI ###
+__pycache__/
+*.py[cod]
+.venv/
+
+ai/models/
+ai/data/raw/
+ai/data/processed/
+ai/data/rejected/
+ai/artifacts/
+*.jsonl
+*.npz
+
+word-model/models/word-13-v1/*
+!word-model/models/word-13-v1/.gitkeep
+!word-model/models/word-13-v1/manifest.json
+!word-model/models/word-13-v1/best_model.pt
+
+/node_modules/
+
+### WebRTC / TLS ###
+*.pem
+*.key
+certs/

@@ -1,0 +1,18 @@
+stages:
+  - validate
+  - test
+  - build
+  - deploy
+  - verify
+
+default:
+  tags:
+    - sudal-deploy
+
+include:
+  - local: '.gitlab/ci/backend.yml'
+  - local: '.gitlab/ci/ai.yml'
+  - local: '.gitlab/ci/frontend.yml'
+  - local: '.gitlab/ci/webrtc.yml'
+  - local: '.gitlab/ci/backup.yml'
+  - local: '.gitlab/ci/monitoring.yml'
